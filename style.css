@@ -177,3 +177,102 @@ img[src="./Images/Image.png"]{
     width: 12px;
     margin-left: 20px;
 }
+
+#my-project{
+    width: 100%;
+    height: 2150px;
+    background-color: #12151E;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#my-project h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:#EEFFEF;
+    margin: 30px 0 20px 0;
+}
+
+.project{
+    width: 246px;
+    height: 300px;
+    background-color: #EEFFEF;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.project h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color:#12151E;
+    margin-top: 24px;
+}
+
+.project p{
+    width: 206px;
+    height: 130px;
+    word-break: break-all;
+    font-family: 'Khmer OS Siemreap', 'Khmer OS';
+    font-size: 14px;
+    text-align: center;
+    margin: 50px 0 17px 0;
+}
+
+.project button{
+    width: 206px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #12151E;
+    color: #EEFFEF;
+    font-family: 'Zilla Slab', serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 227px;
+    background-color: #12151E;
+    margin-top: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1{
+    color: #EEFFEF;
+    font-family: 'Zilla Slab', serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+footer h2, h2 a{
+    color: #EEFFEF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #EEFFEF;
+    margin-bottom: 10px;
+}
+
+.social-item{
+    width: 20px;
+    height: auto;
+    fill: #EEFFEF;
+}
+
+.social-list a{
+    margin: 0 15px;
+}
