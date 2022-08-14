@@ -18,6 +18,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 
 .logo{
@@ -32,9 +33,10 @@ header{
     color: white;
     cursor: pointer;
 }
-  #check{
+
+#check{
     display: none;
-  }
+}
 
 .navigation{
     width: 100%;
@@ -226,16 +228,45 @@ img[src="./Images/Image.png"]{
     margin: 50px 0 17px 0;
 }
 
-.project button{
+.btn-download{
     width: 206px;
     height: 35px;
     border-radius: 50px;
     background-color: #12151E;
+    border: none;
     color: #EEFFEF;
     font-family: 'Zilla Slab', serif;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.btn-download::before, .btn-download::after{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    content: "";
+    background-color: inherit;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.btn-download:hover{
+    transform: translate(-6px, -6px);
+}
+
+.btn-download:hover::before{
+    transform: translate(3px, 3px);
+}
+
+.btn-download:hover::after{
+    transform: translate(6px, 6px);
 }
 
 footer{
@@ -275,6 +306,11 @@ footer h2, h2 a{
     width: 20px;
     height: auto;
     fill: #EEFFEF;
+    transition: fill 0.3s ease;
+}
+
+.social-item:hover{
+    fill: #848894;
 }
 
 .social-list a{
@@ -412,7 +448,7 @@ footer h2, h2 a{
         margin: 40px 0 30px 0;
     }
     
-    .project button{
+    .btn-download{
         width: 310px;
         height: 58px;
         font-size: 20px;
@@ -564,7 +600,7 @@ footer h2, h2 a{
         margin: 40px 0 70px 0;
     }
     
-    .project button{
+    .btn-download{
         width: 288px;
         height: 58px;
         font-size: 20px;
@@ -717,7 +753,7 @@ footer h2, h2 a{
         margin: 40px 0 200px 0;
     }
     
-    .project button{
+    .btn-download{
         width: 420px;
         height: 90px;
         font-size: 24px;
